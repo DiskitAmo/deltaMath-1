@@ -21,7 +21,7 @@
     @media screen and (max-width: 900px) {
       flex-direction: column;
       align-items: center;
-      padding: 20px;
+      padding: 0;
       row-gap: 25px;
     }
     .bttn {
@@ -57,7 +57,7 @@
     @media screen and (max-width: 900px) {
       text-align: center;
       padding: 20px;
-      padding-top: 70px;
+      padding-top: 100px;
       padding-bottom: 70px;
     }
   }
