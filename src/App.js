@@ -3,6 +3,7 @@ import "./App.css";
 import Banner from "./Components/BannerSection/Banner";
 import Navbar from "./Components/Navbar/Navbar";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import Feedback from "./Components/Feedbacks/Feedback";
 
 const theme = createTheme({
   typography: {
@@ -25,6 +26,7 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <Navbar />
         <Banner />
+        <Feedback />
       </ThemeProvider>
     </div>
   );

@@ -1,0 +1,40 @@
+import { Typography } from "@mui/material";
+import React from "react";
+import "./style.css";
+import practise from "../Assets/Vector Smart Object-2.png";
+import feed from "../Assets/Vector Smart Object-1.png";
+import fine from "../Assets/Vector Smart Object.png";
+const Feedback = () => {
+  const types = [
+    {
+      img: practise,
+      heading: "Unlimited practise",
+      para: "lorem ipsum dolor sit amet, comnstrt adispinbtin  weki, sed do weuijd tempor incideny uy labiuy et diolomagnn aliqua.",
+    },
+    {
+      img: feed,
+      heading: "Instant feedback",
+      para: "lorem ipsum dolor sit amet, comnstrt adispinbtin  weki, sed do weuijd tempor incideny uy labiuy et diolomagnn aliqua.",
+    },
+    {
+      img: fine,
+      heading: "Fine-tune controls",
+      para: "lorem ipsum dolor sit amet, comnstrt adispinbtin  weki, sed do weuijd tempor incideny uy labiuy et diolomagnn aliqua.",
+    },
+  ];
+  return (
+    <div className="category">
+      {types.map((item, index) => {
+        return (
+          <div className="practise" key={index}>
+            <img src={item.img}></img>
+            <Typography className="heading">{item.heading}</Typography>
+            <Typography className="lorem">{item.para}</Typography>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+export default Feedback;
