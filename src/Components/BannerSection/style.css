@@ -1,0 +1,86 @@
+.bannerContainer {
+  background-image: url("../Assets/Rectangle 3.png");
+  width: 100%;
+  height: 100vh;
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .bannerContainer {
+    background-position: center center;
+  }
+}
+
+.bannerContainer .boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 250px;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+}
+
+@media screen and (max-width: 900px) {
+  .bannerContainer .boxes {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+    row-gap: 25px;
+  }
+}
+
+.bannerContainer .boxes .bttn {
+  text-transform: none;
+  background-color: #f9a622;
+  color: white;
+  width: 200px;
+}
+
+.bannerContainer .boxes .bttn .text {
+  max-width: 130px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.bannerContainer .boxes .bttn:hover {
+  background-color: gray;
+}
+
+.bannerContainer .headings {
+  text-align: left;
+  padding-left: 250px;
+  padding-top: 200px;
+  padding-bottom: 50px;
+}
+
+.bannerContainer .headings .title {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  font-weight: normal;
+}
+
+.bannerContainer .headings .para {
+  color: white;
+  line-height: 3.5;
+}
+
+@media screen and (max-width: 900px) {
+  .bannerContainer .headings {
+    text-align: center;
+    padding: 20px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

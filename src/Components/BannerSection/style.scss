@@ -1,0 +1,64 @@
+//@import {img} from ".../Assets/Rectangle 3.png";
+
+.bannerContainer {
+  background-image: url("../Assets/Rectangle 3.png");
+  width: 100%;
+  height: 100vh;
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  @media screen and (max-width: 900px) {
+    background-position: center center;
+  }
+
+  .boxes {
+    display: flex;
+    justify-content: flex-start;
+
+    padding-left: 250px;
+    column-gap: 25px;
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      row-gap: 25px;
+    }
+    .bttn {
+      text-transform: none;
+      background-color: #f9a622;
+      color: white;
+      width: 200px;
+
+      .text {
+        max-width: 130px;
+        font-size: medium;
+        font-weight: bold;
+      }
+      &:hover {
+        background-color: gray;
+      }
+    }
+  }
+  .headings {
+    text-align: left;
+    padding-left: 250px;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    .title {
+      font-family: Georgia, "Times New Roman", Times, serif;
+      color: white;
+      font-weight: normal;
+    }
+    .para {
+      color: white;
+      line-height: 3.5;
+    }
+    @media screen and (max-width: 900px) {
+      text-align: center;
+      padding: 20px;
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+  }
+}
