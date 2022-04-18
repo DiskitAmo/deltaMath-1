@@ -13,13 +13,45 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: 70px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 900px) {
+  .category {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 70px;
+    padding-top: 70px !important;
+    padding-bottom: 90px !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .category .lorem {
   max-width: 250px;
+  font-weight: normal;
+  color: black;
+}
+
+@media screen and (max-width: 900px) {
+  .category .lorem {
+    max-width: 300px;
+  }
 }
 
 .category .heading {
-  line-height: 4;
+  line-height: 3;
+  color: #2f3d4f;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.category .practise {
+  padding-top: 34px;
 }
 /*# sourceMappingURL=style.css.map */

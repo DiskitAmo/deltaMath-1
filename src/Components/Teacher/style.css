@@ -1,0 +1,195 @@
+.Teachers {
+  background-color: #f0efef;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1330px) {
+  .Teachers {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
+
+.Teachers .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+}
+
+@media screen and (max-width: 1330px) {
+  .Teachers .images {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media screen and (max-width: 866px) {
+  .Teachers .images .laptop {
+    width: 70%;
+  }
+}
+
+.Teachers .images .persinImg {
+  position: absolute;
+  top: 30px;
+  left: 40%;
+}
+
+@media screen and (max-width: 1880px) {
+  .Teachers .images .persinImg {
+    left: 35%;
+  }
+}
+
+@media screen and (max-width: 1720px) {
+  .Teachers .images .persinImg {
+    left: 30%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .Teachers .images .persinImg {
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .Teachers .images .persinImg {
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 1430px) {
+  .Teachers .images .persinImg {
+    left: 15%;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  .Teachers .images .persinImg {
+    left: 55%;
+  }
+}
+
+@media screen and (max-width: 1270px) {
+  .Teachers .images .persinImg {
+    left: 52%;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .Teachers .images .persinImg {
+    left: 48%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .Teachers .images .persinImg {
+    left: 45%;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .Teachers .images .persinImg {
+    left: 38%;
+  }
+}
+
+@media screen and (max-width: 866px) {
+  .Teachers .images .persinImg {
+    left: 30%;
+    top: 40px;
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .Teachers .images .persinImg {
+    left: 25%;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .Teachers .images .persinImg {
+    left: 25%;
+    width: 20%;
+  }
+}
+
+.Teachers .forTeachers {
+  text-align: left;
+  padding-left: 250px;
+}
+
+@media screen and (max-width: 1330px) {
+  .Teachers .forTeachers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.Teachers .forTeachers .description {
+  text-align: left;
+  color: #2f3d4f;
+  max-width: 470px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1330px) {
+  .Teachers .forTeachers .description {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Teachers .forTeachers .description {
+    max-width: 300px;
+    text-align: center;
+  }
+}
+
+.Teachers .forTeachers .head {
+  text-align: left;
+  color: #2f3d4f;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.Teachers .forTeachers .button {
+  background-color: #2f3d4f;
+  padding: 15px;
+  width: 250px;
+  text-transform: none;
+  font-weight: bold;
+  font-size: large;
+}
+/*# sourceMappingURL=style.css.map */

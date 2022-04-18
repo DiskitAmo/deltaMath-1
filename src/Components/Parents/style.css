@@ -1,0 +1,96 @@
+.Parents {
+  display: -ms-grid !important;
+  display: grid !important;
+  -ms-grid-columns: 1fr 1fr 1fr !important;
+      grid-template-columns: 1fr 1fr 1fr !important;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 1330px) {
+  .Parents {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    row-gap: 40px;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  .Parents .bela {
+    display: none !important;
+  }
+}
+
+.Parents .photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.Parents .forParents {
+  text-align: left;
+}
+
+@media screen and (max-width: 1330px) {
+  .Parents .forParents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.Parents .forParents .description {
+  text-align: left;
+  color: #2f3d4f;
+  max-width: 470px;
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 1330px) {
+  .Parents .forParents .description {
+    text-align: center;
+  }
+}
+
+.Parents .forParents .head {
+  text-align: left;
+  color: #2f3d4f;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@media screen and (max-width: 1330px) {
+  .Parents .forParents .head {
+    text-align: center;
+  }
+}
+
+.Parents .forParents .button {
+  background-color: #2f3d4f;
+  padding: 15px;
+  width: 250px;
+  text-transform: none;
+  font-weight: bold;
+  font-size: large;
+}
+/*# sourceMappingURL=style.css.map */
