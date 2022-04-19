@@ -1,0 +1,59 @@
+.Puzzle {
+  background-color: #2f3d4f;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  .number {
+    color: white;
+    font-weight: bolder;
+  }
+  .boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .box1 {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2px;
+      .a {
+        background-color: #3e4857;
+        width: 60px;
+        height: 50px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        @media screen and (max-width: 900px) {
+          width: 30px;
+          height: 25px;
+        }
+        @media screen and (max-width: 600px) {
+          width: 20px;
+          height: 15px;
+        }
+      }
+      .b {
+        background-color: #3e4857;
+        width: 60px;
+        height: 50px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        @media screen and (max-width: 900px) {
+          width: 30px;
+          height: 25px;
+        }
+        @media screen and (max-width: 600px) {
+          width: 20px;
+          height: 15px;
+        }
+      }
+    }
+    .boxContainer {
+      display: flex;
+      .box2 {
+        display: flex;
+        column-gap: 10px;
+      }
+      .number {
+        color: white;
+      }
+    }
+  }
+}

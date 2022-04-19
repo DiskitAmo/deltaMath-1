@@ -1,1 +1,96 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.Puzzle {
+  background-color: #2f3d4f;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.Puzzle .number {
+  color: white;
+  font-weight: bolder;
+}
+
+.Puzzle .boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Puzzle .boxes .box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2px;
+}
+
+.Puzzle .boxes .box1 .a {
+  background-color: #3e4857;
+  width: 60px;
+  height: 50px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  .Puzzle .boxes .box1 .a {
+    width: 30px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Puzzle .boxes .box1 .a {
+    width: 20px;
+    height: 15px;
+  }
+}
+
+.Puzzle .boxes .box1 .b {
+  background-color: #3e4857;
+  width: 60px;
+  height: 50px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media screen and (max-width: 900px) {
+  .Puzzle .boxes .box1 .b {
+    width: 30px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Puzzle .boxes .box1 .b {
+    width: 20px;
+    height: 15px;
+  }
+}
+
+.Puzzle .boxes .boxContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Puzzle .boxes .boxContainer .box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.Puzzle .boxes .boxContainer .number {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

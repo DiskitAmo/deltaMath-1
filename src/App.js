@@ -6,6 +6,8 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Feedback from "./Components/Feedbacks/Feedback";
 import Teacher from "./Components/Teacher/Teacher";
 import Parents from "./Components/Parents/Parents";
+import SectionCarousel from "./Components/Carousel/SectionCarousel";
+import Puzzle from "./Components/Puzzle/Puzzle";
 
 const theme = createTheme({
   typography: {
@@ -25,8 +27,11 @@ const theme = createTheme({
       },
     },
     h3: {
-      ["@media (max-width:600px)"]: {
+      ["@media (max-width:900px)"]: {
         fontSize: "25px !important",
+      },
+      ["@media (max-width:600px)"]: {
+        fontSize: "16px !important",
       },
     },
   },
@@ -41,6 +46,8 @@ const App = () => {
         <Feedback />
         <Teacher />
         <Parents />
+        <SectionCarousel />
+        <Puzzle />
       </ThemeProvider>
     </div>
   );

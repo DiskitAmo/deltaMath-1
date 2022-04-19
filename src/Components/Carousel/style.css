@@ -1,1 +1,10 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.carousel {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.carousel .title {
+  color: #2f3d4f;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */

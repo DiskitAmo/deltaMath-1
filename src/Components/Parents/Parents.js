@@ -8,8 +8,8 @@ const Parents = () => {
   return (
     <div className="Parents">
       <div className="photos">
-        <img src={laptop1} alt="laptop"></img>
-        <img src={callout1} alt="person"></img>
+        <img src={laptop1} alt="laptop" className="laptop"></img>
+        <img src={callout1} alt="person" className="callout1"></img>
       </div>
       <div className="bela"></div>
       <div className="forParents">

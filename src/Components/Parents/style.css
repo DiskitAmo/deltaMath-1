@@ -35,6 +35,52 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  position: relative;
+}
+
+@media screen and (max-width: 790px) {
+  .Parents .photos .laptop {
+    width: 70%;
+  }
+}
+
+.Parents .photos .callout1 {
+  width: 250px;
+  height: 250px;
+  margin-top: 40px;
+  margin-left: -30%;
+}
+
+@media screen and (max-width: 1330px) {
+  .Parents .photos .callout1 {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: -15%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .Parents .photos .callout1 {
+    margin-left: -18%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .Parents .photos .callout1 {
+    width: 150px;
+    height: 140px;
+    margin-left: -21%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .Parents .photos .callout1 {
+    width: 100px;
+    height: 100px;
+    margin-left: -20%;
+    margin-top: 30px;
+  }
 }
 
 .Parents .forParents {
