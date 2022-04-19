@@ -46,6 +46,9 @@
       display: flex;
       align-items: center;
       column-gap: 15px;
+      .facebook {
+        color: #313d4e !important;
+      }
     }
   }
   .copyrightMobile {
@@ -63,6 +66,9 @@
         display: flex;
         align-items: center;
         column-gap: 15px;
+        .facebook {
+          color: #313d4e !important;
+        }
       }
       .copy {
         display: flex;
@@ -73,6 +79,9 @@
         .term {
           text-decoration: underline;
           text-decoration-color: gray;
+        }
+        .delta {
+          color: gray !important;
         }
       }
     }

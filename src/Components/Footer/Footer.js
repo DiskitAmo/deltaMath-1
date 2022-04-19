@@ -37,20 +37,22 @@ const Footer = () => {
         </div>
 
         <div className="media">
-          <FacebookIcon />
-          <TwitterIcon />
+          <FacebookIcon className="facebook" />
+          <TwitterIcon className="facebook" />
         </div>
       </div>
       <div className="copyrightMobile">
         <div className="media">
-          <FacebookIcon />
-          <TwitterIcon />
+          <FacebookIcon className="facebook" />
+          <TwitterIcon className="facebook" />
         </div>
         <div className="copy">
           <Typography className="term">Site Status</Typography>
           <Typography className="term">Terms of use</Typography>
           <Typography className="term">Privacy policy</Typography>
-          <Typography>&copy;2020 DeltaMath Solutins Inc.</Typography>
+          <Typography className="delta">
+            &copy;2020 DeltaMath Solutins Inc.
+          </Typography>
         </div>
       </div>
     </div>

@@ -86,6 +86,10 @@
           column-gap: 15px;
 }
 
+.footer .social .media .facebook {
+  color: #313d4e !important;
+}
+
 .footer .copyrightMobile {
   display: none;
 }
@@ -121,6 +125,9 @@
     -webkit-column-gap: 15px;
             column-gap: 15px;
   }
+  .footer .copyrightMobile .media .facebook {
+    color: #313d4e !important;
+  }
   .footer .copyrightMobile .copy {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -141,6 +148,9 @@
     text-decoration: underline;
     -webkit-text-decoration-color: gray;
             text-decoration-color: gray;
+  }
+  .footer .copyrightMobile .copy .delta {
+    color: gray !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
