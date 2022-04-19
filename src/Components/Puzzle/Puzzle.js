@@ -13,18 +13,20 @@ const Puzzle = () => {
   return (
     <div className="Puzzle">
       <div className="boxes">
-        <div className="box1">
-          <div className="a"></div>
-          <div className="b"></div>
-          <Typography variant="h3" className="number">
-            2
-          </Typography>
+        <div className="firstBox">
+          <div className="box1">
+            <div className="a"></div>
+            <div className="b"></div>
+            <Typography variant="h3" className="number">
+              2
+            </Typography>
+          </div>
         </div>
         <div className="boxContainer">
           {num.map((item, index) => {
             return (
               <div className="box2" key={index}>
-                ,
+                <p className="p"> ,</p>
                 <div className="box1">
                   <div className="a"></div>
                   <div className="b"></div>

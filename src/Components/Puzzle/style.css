@@ -7,6 +7,20 @@
 .Puzzle .number {
   color: white;
   font-weight: bolder;
+  margin-top: -75px;
+}
+
+@media screen and (max-width: 900px) {
+  .Puzzle .number {
+    margin-top: -40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Puzzle .number {
+    margin-top: -25px;
+    font-size: 16px !important;
+  }
 }
 
 .Puzzle .boxes {
@@ -19,6 +33,23 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .Puzzle .boxes {
+    padding-bottom: 25px;
+  }
+}
+
+.Puzzle .boxes .firstBox {
+  margin-bottom: 43px;
+}
+
+@media screen and (max-width: 900px) {
+  .Puzzle .boxes .firstBox {
+    margin-bottom: 18px;
+  }
 }
 
 .Puzzle .boxes .box1 {
@@ -36,8 +67,8 @@
   background-color: #3e4857;
   width: 60px;
   height: 50px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 @media screen and (max-width: 900px) {
@@ -58,8 +89,8 @@
   background-color: #3e4857;
   width: 60px;
   height: 50px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 @media screen and (max-width: 900px) {
@@ -80,6 +111,25 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.Puzzle .boxes .boxContainer .p {
+  color: white;
+  font-size: 40px;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 900px) {
+  .Puzzle .boxes .boxContainer .p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Puzzle .boxes .boxContainer .p {
+    font-size: 14px;
+    padding-left: 6px;
+  }
 }
 
 .Puzzle .boxes .boxContainer .box2 {

@@ -28,11 +28,11 @@ const theme = createTheme({
     },
     h3: {
       ["@media (max-width:900px)"]: {
-        fontSize: "25px !important",
+        fontSize: "28px !important",
       },
-      ["@media (max-width:600px)"]: {
-        fontSize: "16px !important",
-      },
+      // ["@media (max-width:600px)"]: {
+      //   fontSize: "16px !important",
+      // },
     },
   },
 });
