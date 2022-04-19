@@ -50,40 +50,6 @@
         margin-left: -20%;
         margin-top: 30px;
       }
-      // position: absolute;
-      // top: 20%;
-      // left: 50%;
-      // @media screen and (max-width: 1740px) {
-      //   left: 55%;
-      // }
-      // @media screen and (max-width: 1640px) {
-      //   left: 58%;
-      // }
-      // @media screen and (max-width: 1530px) {
-      //   left: 62%;
-      // }
-      // @media screen and (max-width: 1330px) {
-      //   left: 25%;
-      // }
-      // @media screen and (max-width: 1170px) {
-      //   left: 28%;
-      // }
-      // @media screen and (max-width: 1080px) {
-      //   left: 30%;
-      // }
-      // @media screen and (max-width: 1020px) {
-      //   left: 33%;
-      // }
-      // @media screen and (max-width: 930px) {
-      //   left: 36%;
-      // }
-      // @media screen and (max-width: 840px) {
-      //   left: 43%;
-      //   width: 20%;
-      // }
-      // @media screen and (max-width: 760px) {
-      //   left: 47%;
-      // }
     }
   }
   .forParents {
@@ -102,6 +68,7 @@
       padding-bottom: 50px;
       @media screen and (max-width: 1330px) {
         text-align: center;
+        padding: 20px;
       }
     }
     .head {

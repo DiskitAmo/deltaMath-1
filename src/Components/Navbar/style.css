@@ -1,6 +1,8 @@
 .container {
   background-color: white !important;
   color: gray !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .container .toolbar {
@@ -31,6 +33,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .container .pages {
+    font-size: 16px !important;
+  }
 }
 
 @media screen and (max-width: 900px) {

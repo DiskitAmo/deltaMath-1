@@ -8,7 +8,7 @@ const Banner = () => {
     "For Families/ Individuals",
     "For Students",
   ];
-  const title = "Math done right.";
+
   const title1 = "Depth, clarity, and rigor.";
   const para = "Built by teachers. Used by millions.";
 
@@ -16,7 +16,7 @@ const Banner = () => {
     <div className="bannerContainer">
       <div className="headings">
         <Typography className="title" variant="h2">
-          {title}
+          Math done <span className="right">right.</span>
           <br></br>
           {title1}
         </Typography>
@@ -27,7 +27,7 @@ const Banner = () => {
       <div className="boxes">
         {category.map((text, index) => {
           return (
-            <Button className="bttn" key={index}>
+            <Button className={index === 1 ? "btnHide" : "bttn"} key={index}>
               <span className="text">{text}</span>
             </Button>
           );

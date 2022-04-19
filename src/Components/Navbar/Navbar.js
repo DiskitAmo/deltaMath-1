@@ -6,11 +6,8 @@ import IconButton from "@mui/material/IconButton";
 import { Typography, Button } from "@mui/material";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-
 import MenuItem from "@mui/material/MenuItem";
 import "./style.css";
-
 import img from "../Assets/Logo.png";
 
 const pages = [
@@ -41,7 +38,7 @@ const Navbar = () => {
             variant="h6"
             noWrap
             component="div"
-            sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
+            sx={{ display: { xs: "none", md: "flex" } }}
           >
             <img src={img} alt="logo"></img>
           </Typography>
@@ -115,7 +112,7 @@ const Navbar = () => {
 
           <Box className="pages" sx={{ display: { xs: "none", md: "flex" } }}>
             {pages.map((page, index) => (
-              <Typography key={index} variant="body" className="page">
+              <Typography key={index} variant="body1" className="page">
                 {page}
               </Typography>
             ))}

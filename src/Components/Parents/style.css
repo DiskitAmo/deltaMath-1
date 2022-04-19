@@ -116,6 +116,7 @@
 @media screen and (max-width: 1330px) {
   .Parents .forParents .description {
     text-align: center;
+    padding: 20px;
   }
 }
 

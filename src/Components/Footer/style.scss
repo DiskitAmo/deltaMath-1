@@ -53,7 +53,6 @@
   }
   .copyrightMobile {
     display: none;
-
     @media screen and (max-width: 700px) {
       display: block;
       order: 2;

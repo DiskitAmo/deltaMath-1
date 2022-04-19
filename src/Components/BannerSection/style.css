@@ -11,6 +11,7 @@
 @media screen and (max-width: 900px) {
   .bannerContainer {
     background-position: center center;
+    height: 90vh;
   }
 }
 
@@ -45,6 +46,7 @@
   background-color: #f9a622;
   color: white;
   width: 200px;
+  height: 75px;
 }
 
 .bannerContainer .boxes .bttn .text {
@@ -55,6 +57,20 @@
 
 .bannerContainer .boxes .bttn:hover {
   background-color: gray;
+}
+
+.bannerContainer .boxes .btnHide {
+  text-transform: none;
+  background-color: #f9a622;
+  color: white;
+  width: 200px;
+  height: 75px;
+}
+
+@media screen and (max-width: 900px) {
+  .bannerContainer .boxes .btnHide {
+    display: none;
+  }
 }
 
 .bannerContainer .headings {
@@ -68,6 +84,14 @@
   font-family: Georgia, "Times New Roman", Times, serif;
   color: white;
   font-weight: normal;
+}
+
+.bannerContainer .headings .title .right {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #f9a622;
+          text-decoration-color: #f9a622;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
 }
 
 .bannerContainer .headings .para {
