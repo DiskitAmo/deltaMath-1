@@ -1,30 +1,35 @@
-.container {
+.Navcontainer {
   background-color: white !important;
   color: gray !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
 
-.container .toolbar {
+.Navcontainer .toolbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 @media screen and (max-width: 900px) {
-  .container .toolbar {
+  .Navcontainer .toolbar {
     -webkit-box-pack: justify !important;
         -ms-flex-pack: justify !important;
             justify-content: space-between !important;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
-.container .pages {
+.Navcontainer .pages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,18 +41,18 @@
 }
 
 @media screen and (max-width: 900px) {
-  .container .pages {
+  .Navcontainer .pages {
     font-size: 16px !important;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .container .pages {
+  .Navcontainer .pages {
     display: none !important;
   }
 }
 
-.container .page {
+.Navcontainer .page {
   color: gray;
   border-right: 1px solid gray;
   padding-left: 30px;
@@ -55,19 +60,19 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .container .page {
+  .Navcontainer .page {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 
-.container .mobileBtn {
+.Navcontainer .mobileBtn {
   padding-left: 15px !important;
   padding-right: 15px !important;
   color: white;
 }
 
-.container .menuicon {
+.Navcontainer .menuicon {
   font-size: 45px;
   color: #2f3d4f;
 }

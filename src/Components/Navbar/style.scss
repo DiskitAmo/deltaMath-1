@@ -1,13 +1,17 @@
-.container {
+.Navcontainer {
   background-color: white !important;
   color: gray !important;
   box-shadow: none !important;
   .toolbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
     @media screen and (max-width: 900px) {
       justify-content: space-between !important;
+      padding-left: 0px;
+      padding-right: 0px;
     }
   }
   .pages {

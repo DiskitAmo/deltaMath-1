@@ -1,6 +1,6 @@
 .carouselsection {
-  padding-top: 50px;
-  padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 100px;
 
   .title {
     color: #2f3d4f;
@@ -42,14 +42,13 @@
       }
       .carousel-control-next-icon {
         background-color: gray !important;
-        //display: block;
         @media screen and (max-width: 1130px) {
           margin-left: 80px;
         }
       }
       .carousel-control-prev-icon {
         background-color: gray !important;
-        //display: block;
+
         @media screen and (max-width: 1130px) {
           margin-right: 80px;
         }

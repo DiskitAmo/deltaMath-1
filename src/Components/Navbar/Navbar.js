@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <AppBar position="static" className="container">
+      <AppBar position="static" className="Navcontainer">
         <Toolbar className="toolbar" disableGutters>
           <Typography
             variant="h6"
