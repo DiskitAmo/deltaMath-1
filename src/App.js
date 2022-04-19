@@ -9,6 +9,7 @@ import Parents from "./Components/Parents/Parents";
 import SectionCarousel from "./Components/Carousel/SectionCarousel";
 import Puzzle from "./Components/Puzzle/Puzzle";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Footer from "./Components/Footer/Footer";
 
 const theme = createTheme({
   typography: {
@@ -31,9 +32,6 @@ const theme = createTheme({
       ["@media (max-width:900px)"]: {
         fontSize: "28px !important",
       },
-      // ["@media (max-width:600px)"]: {
-      //   fontSize: "16px !important",
-      // },
     },
   },
 });
@@ -49,6 +47,7 @@ const App = () => {
         <Parents />
         <SectionCarousel />
         <Puzzle />
+        <Footer />
       </ThemeProvider>
     </div>
   );
