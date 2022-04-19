@@ -14,7 +14,7 @@ import Footer from "./Components/Footer/Footer";
 const theme = createTheme({
   typography: {
     h2: {
-      ["@media (max-width:600px)"]: {
+      ["@media (max-width:610px)"]: {
         fontSize: "35px !important",
       },
     },
