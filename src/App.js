@@ -8,6 +8,7 @@ import Teacher from "./Components/Teacher/Teacher";
 import Parents from "./Components/Parents/Parents";
 import SectionCarousel from "./Components/Carousel/SectionCarousel";
 import Puzzle from "./Components/Puzzle/Puzzle";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const theme = createTheme({
   typography: {

@@ -23,9 +23,12 @@
       padding-bottom: 25px;
     }
     .firstBox {
-      margin-bottom: 43px;
+      margin-bottom: 12px;
       @media screen and (max-width: 900px) {
         margin-bottom: 18px;
+      }
+      @media screen and (max-width: 600px) {
+        margin-bottom: 10px;
       }
     }
     .box1 {
@@ -69,13 +72,14 @@
         color: white;
         font-size: 40px;
         padding-left: 10px;
+        padding-top: 20px;
         @media screen and (max-width: 900px) {
           font-size: 20px;
         }
         @media screen and (max-width: 600px) {
           font-size: 14px;
           padding-left: 6px;
-          //padding-bottom: 20px;
+          padding-top: 0px;
         }
       }
       .box2 {

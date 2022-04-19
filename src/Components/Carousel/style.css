@@ -1,10 +1,145 @@
-.carousel {
+.carouselsection {
   padding-top: 50px;
   padding-bottom: 60px;
 }
 
-.carousel .title {
+.carouselsection .title {
   color: #2f3d4f;
   font-weight: bold;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1030px) {
+  .carouselsection .cardCarousel {
+    display: none;
+  }
+}
+
+.carouselsection .cardCarousel .carousel .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.carouselsection .cardCarousel .carousel .item .Card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  max-width: 300px;
+  max-height: 650px;
+  border-radius: 5px;
+}
+
+.carouselsection .cardCarousel .carousel .item .Card .quote {
+  width: 30px;
+}
+
+.carouselsection .cardCarousel .carousel .item .Card .detail {
+  color: #8c8a8a !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.carouselsection .cardCarousel .carousel .item .Card .occupation {
+  color: #8c8a8a !important;
+}
+
+.carouselsection .cardCarousel .carousel .item .Card .profile {
+  padding-bottom: 15px;
+}
+
+.carouselsection .cardCarousel .carousel .carousel-control-next-icon {
+  background-color: gray !important;
+}
+
+@media screen and (max-width: 1130px) {
+  .carouselsection .cardCarousel .carousel .carousel-control-next-icon {
+    margin-left: 80px;
+  }
+}
+
+.carouselsection .cardCarousel .carousel .carousel-control-prev-icon {
+  background-color: gray !important;
+}
+
+@media screen and (max-width: 1130px) {
+  .carouselsection .cardCarousel .carousel .carousel-control-prev-icon {
+    margin-right: 80px;
+  }
+}
+
+.carouselsection .mobileCarousel {
+  display: none;
+}
+
+@media screen and (max-width: 1030px) {
+  .carouselsection .mobileCarousel {
+    display: block;
+  }
+}
+
+.carouselsection .mobileCarousel .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carouselsection .mobileCarousel .mobileCard {
+  background-color: #f5f5f5;
+  padding: 20px;
+  max-width: 300px;
+  max-height: 650px;
+  border-radius: 5px;
+}
+
+.carouselsection .mobileCarousel .mobileCard .quote {
+  width: 30px;
+}
+
+.carouselsection .mobileCarousel .mobileCard .detail {
+  color: #8c8a8a !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.carouselsection .mobileCarousel .mobileCard .occupation {
+  color: #8c8a8a !important;
+}
+
+.carouselsection .mobileCarousel .mobileCard .profile {
+  padding-bottom: 15px;
+}
+
+.carouselsection .mobileCarousel .carousel-control-next-icon {
+  background-color: gray !important;
+}
+
+@media screen and (max-width: 388px) {
+  .carouselsection .mobileCarousel .carousel-control-next-icon {
+    margin-left: 30px;
+  }
+}
+
+.carouselsection .mobileCarousel .carousel-control-prev-icon {
+  background-color: gray !important;
+}
+
+@media screen and (max-width: 388px) {
+  .carouselsection .mobileCarousel .carousel-control-prev-icon {
+    margin-right: 30px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
