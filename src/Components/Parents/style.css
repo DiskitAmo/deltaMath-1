@@ -1,13 +1,15 @@
 .Parents {
   display: -ms-grid !important;
   display: grid !important;
-  -ms-grid-columns: 1fr 1fr 1fr !important;
-      grid-template-columns: 1fr 1fr 1fr !important;
+  -ms-grid-columns: 1fr 1fr !important;
+      grid-template-columns: 1fr 1fr !important;
   padding-top: 70px;
   padding-bottom: 70px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-column-gap: 150px;
+          column-gap: 150px;
 }
 
 @media screen and (max-width: 1330px) {
@@ -38,6 +40,16 @@
   position: relative;
 }
 
+.Parents .photos .laptop {
+  width: 80%;
+}
+
+@media screen and (max-width: 1330px) {
+  .Parents .photos .laptop {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 790px) {
   .Parents .photos .laptop {
     width: 70%;
@@ -45,9 +57,9 @@
 }
 
 .Parents .photos .callout1 {
-  width: 250px;
-  height: 250px;
-  margin-top: 40px;
+  width: 230px;
+  height: 230px;
+  margin-top: 60px;
   margin-left: -30%;
 }
 
@@ -116,7 +128,7 @@
 @media screen and (max-width: 1330px) {
   .Parents .forParents .description {
     text-align: center;
-    padding: 20px;
+    padding: px;
   }
 }
 

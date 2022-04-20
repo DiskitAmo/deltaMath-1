@@ -1,21 +1,24 @@
 .bannerContainer {
   background-image: url("../Assets/Rectangle 3.png");
   width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   @media screen and (max-width: 900px) {
     background-position: center center;
-    height: 80vh;
+    height: 70vh;
+  }
+  @media screen and (max-width: 600px) {
+    height: 70vh;
   }
 
   .boxes {
     display: flex;
     justify-content: flex-start;
+    padding-top: 40px !important;
 
-    padding-left: 250px;
     column-gap: 25px;
     @media screen and (max-width: 900px) {
       flex-direction: column;
@@ -57,10 +60,15 @@
     }
   }
   .headings {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     text-align: left;
-    padding-left: 250px;
-    padding-top: 200px;
-    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+
     .title {
       font-family: Georgia, "Times New Roman", Times, serif;
       color: white;
@@ -78,7 +86,7 @@
     @media screen and (max-width: 900px) {
       text-align: center;
       padding: 20px;
-      padding-top: 100px;
+      padding-top: 80px;
       padding-bottom: 70px;
     }
   }

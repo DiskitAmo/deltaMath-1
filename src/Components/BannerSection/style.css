@@ -1,7 +1,7 @@
 .bannerContainer {
   background-image: url("../Assets/Rectangle 3.png");
   width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   background-position: center bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11,7 +11,13 @@
 @media screen and (max-width: 900px) {
   .bannerContainer {
     background-position: center center;
-    height: 80vh;
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bannerContainer {
+    height: 70vh;
   }
 }
 
@@ -22,7 +28,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding-left: 250px;
+  padding-top: 40px !important;
   -webkit-column-gap: 25px;
           column-gap: 25px;
 }
@@ -80,10 +86,21 @@
 }
 
 .bannerContainer .headings {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   text-align: left;
-  padding-left: 250px;
-  padding-top: 200px;
-  padding-bottom: 50px;
+  padding-left: 80px;
+  padding-top: 110px;
+  padding-bottom: 110px;
 }
 
 .bannerContainer .headings .title {
@@ -109,7 +126,7 @@
   .bannerContainer .headings {
     text-align: center;
     padding: 20px;
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 70px;
   }
 }

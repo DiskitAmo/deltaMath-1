@@ -1,4 +1,4 @@
-import { Button, Typography } from "@mui/material";
+import { Button, Container, Typography } from "@mui/material";
 import React from "react";
 import "./style.css";
 
@@ -14,7 +14,7 @@ const Banner = () => {
 
   return (
     <div className="bannerContainer">
-      <div className="headings">
+      <Container className="headings">
         <Typography className="title" variant="h2">
           Math done <span className="right">right.</span>
           <br></br>
@@ -23,16 +23,17 @@ const Banner = () => {
         <Typography variant="h5" className="para">
           {para}
         </Typography>
-      </div>
-      <div className="boxes">
-        {category.map((text, index) => {
-          return (
-            <Button className={index === 1 ? "btnHide" : "bttn"} key={index}>
-              <span className="text">{text}</span>
-            </Button>
-          );
-        })}
-      </div>
+
+        <div className="boxes">
+          {category.map((text, index) => {
+            return (
+              <Button className={index === 1 ? "btnHide" : "bttn"} key={index}>
+                <span className="text">{text}</span>
+              </Button>
+            );
+          })}
+        </div>
+      </Container>
     </div>
   );
 };

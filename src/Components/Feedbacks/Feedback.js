@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import React from "react";
 import "./style.css";
 import practise from "../Assets/Vector Smart Object-2.png";
@@ -24,17 +24,19 @@ const Feedback = () => {
   ];
   return (
     <div className="category">
-      {types.map((item, index) => {
-        return (
-          <div className={index === 0 ? "practise" : ""} key={index}>
-            <img src={item.img}></img>
-            <Typography className="heading" variant="h4">
-              {item.heading}
-            </Typography>
-            <Typography className="lorem">{item.para}</Typography>
-          </div>
-        );
-      })}
+      <Container className="categotyContainer">
+        {types.map((item, index) => {
+          return (
+            <div className={index === 0 ? "practise" : "services"} key={index}>
+              <img src={item.img}></img>
+              <Typography className="heading" variant="h4">
+                {item.heading}
+              </Typography>
+              <Typography className="lorem">{item.para}</Typography>
+            </div>
+          );
+        })}
+      </Container>
     </div>
   );
 };

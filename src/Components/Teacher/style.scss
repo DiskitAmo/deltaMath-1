@@ -8,6 +8,8 @@
 }
 
 .Teachers {
+  // max-width: calc(50vw + 600px);
+  width: 100%;
   background-color: #f0efef;
   padding-top: 70px;
   padding-bottom: 70px;
@@ -26,60 +28,40 @@
       order: 1;
     }
     .laptop {
-      @media screen and (max-width: 866px) {
-        width: 70%;
+      width: 80%;
+      @media screen and (max-width: 1330px) {
+        width: 50%;
+      }
+      @media screen and (max-width: 900px) {
+        width: 60%;
       }
     }
     .persinImg {
       position: absolute;
       top: 30px;
-      left: 40%;
+      left: 15%;
       @media screen and (max-width: 1880px) {
-        left: 35%;
-      }
-      @media screen and (max-width: 1720px) {
-        left: 30%;
-      }
-      @media screen and (max-width: 1600px) {
-        left: 25%;
-      }
-      @media screen and (max-width: 1500px) {
-        left: 20%;
-      }
-      @media screen and (max-width: 1430px) {
         left: 15%;
       }
+
       @media screen and (max-width: 1330px) {
-        left: 55%;
-      }
-      @media screen and (max-width: 1270px) {
-        left: 52%;
-      }
-      @media screen and (max-width: 1170px) {
-        left: 48%;
-      }
-      @media screen and (max-width: 1100px) {
         left: 45%;
       }
-      @media screen and (max-width: 1030px) {
-        left: 38%;
-      }
-      @media screen and (max-width: 866px) {
-        left: 30%;
+
+      @media screen and (max-width: 900px) {
+        left: 35%;
         top: 40px;
-        width: 20%;
-      }
-      @media screen and (max-width: 750px) {
-        left: 25%;
-      }
-      @media screen and (max-width: 710px) {
-        left: 25%;
         width: 20%;
       }
     }
   }
   .forTeachers {
     text-align: left;
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     padding-left: 250px;
     @media screen and (max-width: 1330px) {
       display: flex;

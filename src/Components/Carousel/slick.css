@@ -1,0 +1,157 @@
+.slickcarousel {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.slickcarousel .title {
+  color: #2f3d4f;
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+.slickcarousel .slick-arrow {
+  color: #2f3d4f !important;
+  background-color: #e2e6ec !important;
+}
+
+@media screen and (max-width: 700px) {
+  .slickcarousel .slick-arrow {
+    display: none !important;
+  }
+}
+
+.slickcarousel .item {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .slickcarousel .item {
+    display: none !important;
+  }
+}
+
+.slickcarousel .item .Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+  max-width: 300px;
+  max-height: 750px;
+  border-radius: 5px;
+}
+
+.slickcarousel .item .Card .quote {
+  width: 30px;
+}
+
+.slickcarousel .item .Card .detail {
+  color: #8c8a8a !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.slickcarousel .item .Card .occupation {
+  color: #8c8a8a !important;
+}
+
+.slickcarousel .item .Card .profile {
+  padding-bottom: 15px;
+}
+
+.slickcarousel .mobileCarousel {
+  display: none !important;
+}
+
+@media screen and (max-width: 700px) {
+  .slickcarousel .mobileCarousel {
+    display: block !important;
+    padding: 20px;
+  }
+}
+
+.slickcarousel .mobileCarousel .slick-arrow {
+  display: block !important;
+  color: #2f3d4f !important;
+  background-color: #e2e6ec !important;
+}
+
+.slickcarousel .mobileCarousel .item {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slickcarousel .mobileCarousel .mobileCard {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+  max-width: 300px;
+  max-height: 650px;
+  border-radius: 5px;
+}
+
+.slickcarousel .mobileCarousel .mobileCard .quote {
+  width: 30px;
+}
+
+.slickcarousel .mobileCarousel .mobileCard .detail {
+  color: #8c8a8a !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.slickcarousel .mobileCarousel .mobileCard .occupation {
+  color: #8c8a8a !important;
+}
+
+.slickcarousel .mobileCarousel .mobileCard .profile {
+  padding-bottom: 15px;
+}
+/*# sourceMappingURL=slick.css.map */

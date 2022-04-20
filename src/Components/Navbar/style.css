@@ -5,7 +5,14 @@
           box-shadow: none !important;
 }
 
-.Navcontainer .toolbar {
+.Navcontainer .Navbar {
+  max-width: 1200px;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Navcontainer .Navbar .toolbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,12 +22,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 @media screen and (max-width: 900px) {
-  .Navcontainer .toolbar {
+  .Navcontainer .Navbar .toolbar {
     -webkit-box-pack: justify !important;
         -ms-flex-pack: justify !important;
             justify-content: space-between !important;
@@ -29,7 +34,7 @@
   }
 }
 
-.Navcontainer .pages {
+.Navcontainer .Navbar .pages {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,38 +46,38 @@
 }
 
 @media screen and (max-width: 900px) {
-  .Navcontainer .pages {
+  .Navcontainer .Navbar .pages {
     font-size: 16px !important;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .Navcontainer .pages {
+  .Navcontainer .Navbar .pages {
     display: none !important;
   }
 }
 
-.Navcontainer .page {
+.Navcontainer .Navbar .page {
   color: gray;
   border-right: 1px solid gray;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media screen and (max-width: 1200px) {
-  .Navcontainer .page {
+  .Navcontainer .Navbar .page {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 
-.Navcontainer .mobileBtn {
+.Navcontainer .Navbar .mobileBtn {
   padding-left: 15px !important;
   padding-right: 15px !important;
   color: white;
 }
 
-.Navcontainer .menuicon {
+.Navcontainer .Navbar .menuicon {
   font-size: 45px;
   color: #2f3d4f;
 }

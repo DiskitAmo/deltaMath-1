@@ -1,13 +1,29 @@
-import { Typography } from "@mui/material";
 import React from "react";
-import "./style.css";
-import { Carousel } from "react-bootstrap";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Container, Typography } from "@mui/material";
+import "./slick.css";
 import profile1 from "../Assets/Ellipse 3.png";
 import profile2 from "../Assets/Ellipse 4.png";
 import profile3 from "../Assets/Ellipse 5.png";
 import quote from "../Assets/quote.png";
 
-const SectionCarousel = () => {
+const SlickCarousel = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+  const settings1 = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   const title = "Why do millions of people choose to learn on DeltaMath?";
   const cardData = [
     {
@@ -32,14 +48,15 @@ const SectionCarousel = () => {
       occupation: "Student",
     },
   ];
+
   return (
-    <div className="carouselsection">
-      <Typography variant="h5" className="title">
-        {title}
-      </Typography>
-      <div className="cardCarousel">
-        <Carousel className="carousel" indicators={false} id="carouselExample">
-          <Carousel.Item className="item">
+    <div>
+      <Container className="slickcarousel">
+        <Typography variant="h5" className="title">
+          {title}
+        </Typography>
+        <Slider {...settings}>
+          <div className="item">
             {cardData.map((item, index) => {
               return (
                 <div className="Card" key={index}>
@@ -59,8 +76,8 @@ const SectionCarousel = () => {
                 </div>
               );
             })}
-          </Carousel.Item>
-          <Carousel.Item className="item">
+          </div>
+          <div className="item">
             {cardData.map((item, index) => {
               return (
                 <div className="Card" key={index}>
@@ -80,8 +97,8 @@ const SectionCarousel = () => {
                 </div>
               );
             })}
-          </Carousel.Item>
-          <Carousel.Item className="item">
+          </div>
+          <div className="item">
             {cardData.map((item, index) => {
               return (
                 <div className="Card" key={index}>
@@ -101,36 +118,36 @@ const SectionCarousel = () => {
                 </div>
               );
             })}
-          </Carousel.Item>
-        </Carousel>
-      </div>
-      <div className="mobileCarousel">
-        <Carousel className="carousel" indicators={false} id="carouselExample">
-          {cardData.map((item, index) => {
-            return (
-              <Carousel.Item className="item" key={index}>
-                <div className="mobileCard">
-                  <img src={item.Quote} alt="quote" className="quote"></img>
-                  <Typography variant="body2" className="detail">
-                    {item.detail}
-                  </Typography>
-                  <img
-                    src={item.image}
-                    alt="profile picture"
-                    className="profile"
-                  ></img>
-                  <Typography>Name Here</Typography>
-                  <Typography variant="body2" className="occupation">
-                    {item.occupation}
-                  </Typography>
+          </div>
+        </Slider>
+        <div className="mobileCarousel">
+          <Slider {...settings}>
+            {cardData.map((item, index) => {
+              return (
+                <div className="item" key={index}>
+                  <div className="mobileCard">
+                    <img src={item.Quote} alt="quote" className="quote"></img>
+                    <Typography variant="body2" className="detail">
+                      {item.detail}
+                    </Typography>
+                    <img
+                      src={item.image}
+                      alt="profile picture"
+                      className="profile"
+                    ></img>
+                    <Typography>Name Here</Typography>
+                    <Typography variant="body2" className="occupation">
+                      {item.occupation}
+                    </Typography>
+                  </div>
                 </div>
-              </Carousel.Item>
-            );
-          })}
-        </Carousel>
-      </div>
+              );
+            })}
+          </Slider>
+        </div>
+      </Container>
     </div>
   );
 };
 
-export default SectionCarousel;
+export default SlickCarousel;

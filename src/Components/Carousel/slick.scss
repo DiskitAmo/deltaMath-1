@@ -1,0 +1,96 @@
+.slickcarousel {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  .title {
+    color: #2f3d4f;
+    font-weight: bold;
+    padding-bottom: 50px;
+  }
+  .slick-arrow {
+    color: #2f3d4f !important;
+    background-color: #e2e6ec !important;
+    @media screen and (max-width: 700px) {
+      display: none !important;
+    }
+  }
+  .item {
+    display: flex !important;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;
+    @media screen and (max-width: 700px) {
+      display: none !important;
+    }
+    .Card {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+      justify-content: center;
+      background-color: #f5f5f5;
+      padding: 20px;
+      max-width: 300px;
+      max-height: 750px;
+      border-radius: 5px;
+
+      .quote {
+        width: 30px;
+      }
+      .detail {
+        color: #8c8a8a !important;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      .occupation {
+        color: #8c8a8a !important;
+      }
+      .profile {
+        padding-bottom: 15px;
+      }
+    }
+  }
+  .mobileCarousel {
+    display: none !important;
+    @media screen and (max-width: 700px) {
+      display: block !important;
+      padding: 20px;
+    }
+    .slick-arrow {
+      display: block !important;
+      color: #2f3d4f !important;
+      background-color: #e2e6ec !important;
+    }
+    .item {
+      display: flex !important;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    .mobileCard {
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #f5f5f5;
+      padding: 20px;
+      max-width: 300px;
+      max-height: 650px;
+      border-radius: 5px;
+      .quote {
+        width: 30px;
+      }
+      .detail {
+        color: #8c8a8a !important;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      .occupation {
+        color: #8c8a8a !important;
+      }
+      .profile {
+        padding-bottom: 15px;
+      }
+    }
+  }
+}
