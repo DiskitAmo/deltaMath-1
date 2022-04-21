@@ -1,781 +1,90 @@
-import React from "react";
-
+import "./style.css";
+import { Typography } from "@mui/material";
+import React, { useState, useEffect } from "react";
 const PuzzleNew = () => {
+  const num = [1, 2, 3];
+
+  const [hour1, setHour1] = useState();
+  const [hour2, setHour2] = useState();
+  const [min1, setMin1] = useState();
+  const [min2, setMin2] = useState();
+  const [seconds1, setSeconds1] = useState();
+  const [seconds2, setSeconds2] = useState();
+
+  const runclock = () => {
+    const date = new Date();
+    const now = {
+      h: date.getHours(),
+      m: date.getMinutes(),
+      s: date.getSeconds(),
+    };
+    now.h = now.h < 10 ? `0${now.h}` : `${now.h}`;
+    now.m = now.m < 10 ? `0${now.m}` : `${now.m}`;
+    now.s = now.s < 10 ? `0${now.s}` : `${now.s}`;
+    setHour1(now.h[0]);
+    setHour2(now.h[1]);
+    setMin1(now.m[0]);
+    setMin2(now.m[1]);
+    setSeconds1(now.s[0]);
+    setSeconds2(now.s[1]);
+  };
+
+  setInterval(runclock, 1000);
+  //flipdown
   return (
-    <div>
-      <div class="index__problemCounter">
-        <div class="index__problemCounter-problemCount-flip">
-          <div class="tick" data-state="initialised">
-            <div data-repeat="true" aria-hidden="true">
-              <span data-view="flip" class="tick-flip">
-                <span class="tick-flip-card">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(0deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper">3</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-180deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper">3</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 2;"
-                    ></span>
-                    <span class="tick-flip-panel-back-shadow"></span>
-                  </span>
-                </span>
-                <span class="tick-flip-card">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(-180deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper">3</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-360deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper">3</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 0;"
-                    ></span>
-                    <span
-                      class="tick-flip-panel-back-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                </span>
-                <span class="tick-flip-spacer">3</span>
-                <span class="tick-flip-shadow-top tick-flip-shadow tick-flip-front"></span>
-                <span class="tick-flip-shadow-bottom tick-flip-shadow tick-flip-back"></span>
-                <span
-                  class="tick-flip-card-shadow"
-                  style="opacity: 0; transform: scaleY(0);"
-                ></span>
-              </span>
-            </div>
-          </div>
-          <div class="index__problemCounter-problemCount-comma">,</div>
-          <div class="tick" data-state="initialised">
-            <div data-repeat="true" aria-hidden="true">
-              <span data-view="flip" class="tick-flip">
-                <span class="tick-flip-card">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(0deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper">2</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-180deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper"></span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 2;"
-                    ></span>
-                    <span class="tick-flip-panel-back-shadow"></span>
-                  </span>
-                </span>
-                <span class="tick-flip-card">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(-180deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper"></span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-360deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper">2</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 0;"
-                    ></span>
-                    <span
-                      class="tick-flip-panel-back-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                </span>
-                <span class="tick-flip-spacer">2</span>
-                <span class="tick-flip-shadow-top tick-flip-shadow tick-flip-front"></span>
-                <span class="tick-flip-shadow-bottom tick-flip-shadow tick-flip-back"></span>
-                <span
-                  class="tick-flip-card-shadow"
-                  style="opacity: 0; transform: scaleY(0);"
-                ></span>
-              </span>
-            </div>
-          </div>
-          <div class="tick" data-state="initialised">
-            <div data-repeat="true" aria-hidden="true">
-              <span data-view="flip" class="tick-flip">
-                <span class="tick-flip-card">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(0deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper">5</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-180deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper"></span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 2;"
-                    ></span>
-                    <span class="tick-flip-panel-back-shadow"></span>
-                  </span>
-                </span>
-                <span class="tick-flip-card">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(-180deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper"></span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-360deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper">5</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 0;"
-                    ></span>
-                    <span
-                      class="tick-flip-panel-back-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                </span>
-                <span class="tick-flip-spacer">5</span>
-                <span class="tick-flip-shadow-top tick-flip-shadow tick-flip-front"></span>
-                <span class="tick-flip-shadow-bottom tick-flip-shadow tick-flip-back"></span>
-                <span
-                  class="tick-flip-card-shadow"
-                  style="opacity: 0; transform: scaleY(0);"
-                ></span>
-              </span>
-            </div>
-          </div>
-          <div class="tick" data-state="initialised">
-            <div data-repeat="true" aria-hidden="true">
-              <span data-view="flip" class="tick-flip">
-                <span class="tick-flip-card">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(0deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper">2</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-180deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper"></span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 2;"
-                    ></span>
-                    <span class="tick-flip-panel-back-shadow"></span>
-                  </span>
-                </span>
-                <span class="tick-flip-card">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(-180deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper"></span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-360deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper">2</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 0;"
-                    ></span>
-                    <span
-                      class="tick-flip-panel-back-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                </span>
-                <span class="tick-flip-spacer">2</span>
-                <span class="tick-flip-shadow-top tick-flip-shadow tick-flip-front"></span>
-                <span class="tick-flip-shadow-bottom tick-flip-shadow tick-flip-back"></span>
-                <span
-                  class="tick-flip-card-shadow"
-                  style="opacity: 0; transform: scaleY(0);"
-                ></span>
-              </span>
-            </div>
-          </div>
-          <div class="index__problemCounter-problemCount-comma">,</div>
-          <div class="tick" data-state="initialised">
-            <div data-repeat="true" aria-hidden="true">
-              <span data-view="flip" class="tick-flip">
-                <span class="tick-flip-card">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(0deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper">1</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-180deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper"></span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 2;"
-                    ></span>
-                    <span class="tick-flip-panel-back-shadow"></span>
-                  </span>
-                </span>
-                <span class="tick-flip-card">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(-180deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper">0</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-360deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper">1</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 0;"
-                    ></span>
-                    <span
-                      class="tick-flip-panel-back-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                </span>
-                <span class="tick-flip-spacer">1</span>
-                <span class="tick-flip-shadow-top tick-flip-shadow tick-flip-front"></span>
-                <span class="tick-flip-shadow-bottom tick-flip-shadow tick-flip-back"></span>
-                <span
-                  class="tick-flip-card-shadow"
-                  style="opacity: 0; transform: scaleY(0);"
-                ></span>
-              </span>
-            </div>
-          </div>
-          <div class="tick" data-state="initialised">
-            <div data-repeat="true" aria-hidden="true">
-              <span data-view="flip" class="tick-flip">
-                <span class="tick-flip-card">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(0deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper">4</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-180deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper">4</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 2;"
-                    ></span>
-                    <span class="tick-flip-panel-back-shadow"></span>
-                  </span>
-                </span>
-                <span class="tick-flip-card">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(-180deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper">4</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-360deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper">4</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 0;"
-                    ></span>
-                    <span
-                      class="tick-flip-panel-back-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                </span>
-                <span class="tick-flip-spacer">4</span>
-                <span class="tick-flip-shadow-top tick-flip-shadow tick-flip-front"></span>
-                <span class="tick-flip-shadow-bottom tick-flip-shadow tick-flip-back"></span>
-                <span
-                  class="tick-flip-card-shadow"
-                  style="opacity: 0; transform: scaleY(0);"
-                ></span>
-              </span>
-            </div>
-          </div>
-          <div class="tick" data-state="initialised">
-            <div data-repeat="true" aria-hidden="true">
-              <span data-view="flip" class="tick-flip">
-                <span class="tick-flip-card">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(0deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper">3</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-180deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper">3</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 2;"
-                    ></span>
-                    <span class="tick-flip-panel-back-shadow"></span>
-                  </span>
-                </span>
-                <span class="tick-flip-card">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(-180deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper">3</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-360deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper">3</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 0;"
-                    ></span>
-                    <span
-                      class="tick-flip-panel-back-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                </span>
-                <span class="tick-flip-spacer">3</span>
-                <span class="tick-flip-shadow-top tick-flip-shadow tick-flip-front"></span>
-                <span class="tick-flip-shadow-bottom tick-flip-shadow tick-flip-back"></span>
-                <span
-                  class="tick-flip-card-shadow"
-                  style="opacity: 0; transform: scaleY(0);"
-                ></span>
-              </span>
-            </div>
-          </div>
-          <div class="index__problemCounter-problemCount-comma">,</div>
-          <div class="tick" data-state="initialised">
-            <div data-repeat="true" aria-hidden="true">
-              <span data-view="flip" class="tick-flip">
-                <span class="tick-flip-card">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(0deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper">8</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-180deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper"></span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 2;"
-                    ></span>
-                    <span class="tick-flip-panel-back-shadow"></span>
-                  </span>
-                </span>
-                <span class="tick-flip-card" style="">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(-180deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper">7</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-360deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper">8</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 0;"
-                    ></span>
-                    <span
-                      class="tick-flip-panel-back-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                </span>
-                <span class="tick-flip-spacer">8</span>
-                <span class="tick-flip-shadow-top tick-flip-shadow tick-flip-front"></span>
-                <span class="tick-flip-shadow-bottom tick-flip-shadow tick-flip-back"></span>
-                <span
-                  class="tick-flip-card-shadow"
-                  style="opacity: 0; transform: scaleY(0);"
-                ></span>
-              </span>
-            </div>
-          </div>
-          <div class="tick" data-state="initialised">
-            <div data-repeat="true" aria-hidden="true">
-              <span data-view="flip" class="tick-flip">
-                <span class="tick-flip-card">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(0deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper">7</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-180deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper"></span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 2;"
-                    ></span>
-                    <span class="tick-flip-panel-back-shadow"></span>
-                  </span>
-                </span>
-                <span class="tick-flip-card" style="z-index: 10;">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(-170.595deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper">6</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0.104497;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-350.595deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper">7</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 0.104497;"
-                    ></span>
-                    <span
-                      class="tick-flip-panel-back-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                </span>
-                <span class="tick-flip-card" style="">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(-180deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper">5</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-360deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper">6</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 0;"
-                    ></span>
-                    <span
-                      class="tick-flip-panel-back-shadow"
-                      style="opacity: 0.999857;"
-                    ></span>
-                  </span>
-                </span>
-                <span class="tick-flip-spacer">7</span>
-                <span class="tick-flip-shadow-top tick-flip-shadow tick-flip-front"></span>
-                <span class="tick-flip-shadow-bottom tick-flip-shadow tick-flip-back"></span>
-                <span
-                  class="tick-flip-card-shadow"
-                  style="opacity: 0.163407; transform: scaleY(0.163407);"
-                ></span>
-              </span>
-            </div>
-          </div>
-          <div class="tick" data-state="initialised">
-            <div data-repeat="true" aria-hidden="true">
-              <span data-view="flip" class="tick-flip">
-                <span class="tick-flip-card">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(0deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper">0</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-180deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper"></span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 2;"
-                    ></span>
-                    <span class="tick-flip-panel-back-shadow"></span>
-                  </span>
-                </span>
-                <span class="tick-flip-card" style="z-index: 10;">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(-170.472deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper">8</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0.105865;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-350.472deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper">0</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 0.105865;"
-                    ></span>
-                    <span
-                      class="tick-flip-panel-back-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                </span>
-                <span class="tick-flip-card" style="">
-                  <span
-                    class="tick-flip-panel-front tick-flip-front tick-flip-panel"
-                    style="transform: rotateX(-180deg);"
-                  >
-                    <span class="tick-flip-panel-front-text">
-                      <span class="tick-flip-panel-text-wrapper">9</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-front-shadow"
-                      style="opacity: 0;"
-                    ></span>
-                  </span>
-                  <span
-                    class="tick-flip-panel-back tick-flip-back tick-flip-panel"
-                    style="transform: rotateX(-360deg);"
-                  >
-                    <span class="tick-flip-panel-back-text">
-                      <span class="tick-flip-panel-text-wrapper">8</span>
-                    </span>
-                    <span
-                      class="tick-flip-panel-back-highlight"
-                      style="opacity: 0;"
-                    ></span>
-                    <span
-                      class="tick-flip-panel-back-shadow"
-                      style="opacity: 0.999852;"
-                    ></span>
-                  </span>
-                </span>
-                <span class="tick-flip-spacer">0</span>
-                <span class="tick-flip-shadow-top tick-flip-shadow tick-flip-front"></span>
-                <span class="tick-flip-shadow-bottom tick-flip-shadow tick-flip-back"></span>
-                <span
-                  class="tick-flip-card-shadow"
-                  style="opacity: 0.165528; transform: scaleY(0.165528);"
-                ></span>
-              </span>
-            </div>
+    <div className="Puzzle">
+      <div className="boxes">
+        <div className="firstBox ">
+          <div className="box1">
+            <div className="a"></div>
+            <div className="b"></div>
+            <Typography variant="h3" className="number">
+              2
+            </Typography>
           </div>
         </div>
-        <div class="index__problemCounter-problemCount-small">
-          3,252,143,870
-        </div>
-        <div class="index__problemCounter-description">
-          Problems solved with DeltaMath
+        <div className="boxContainer">
+          {num.map((item, index) => {
+            return (
+              <div className="box2" key={index}>
+                <p className="p"> ,</p>
+                <div className="box1">
+                  <div className="a"></div>
+                  <div className="b"></div>
+                  <Typography variant="h3" className={"number"}>
+                    0
+                  </Typography>
+                </div>
+                <div className="box1">
+                  <div className="a"></div>
+                  <div className="b"></div>
+                  <Typography variant="h3" className="number">
+                    {index === 0
+                      ? `${hour1}`
+                      : index === 1
+                      ? `${min1}`
+                      : `${seconds1}`}
+                  </Typography>
+                </div>
+                <div className="box1">
+                  <div className="a"></div>
+                  <div className="b"></div>
+                  <Typography variant="h3" className={"number"}>
+                    {index === 0
+                      ? `${hour2}`
+                      : index === 1
+                      ? `${min2}`
+                      : `${seconds2}`}
+                  </Typography>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
+      <Typography variant="body" sx={{ color: "white" }}>
+        Problem solved with DeltaMath
+      </Typography>
     </div>
   );
 };

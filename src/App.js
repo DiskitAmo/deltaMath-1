@@ -14,6 +14,7 @@ import Puzzle from "./Components/Puzzle/Puzzle";
 //import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./Components/Footer/Footer";
 import SlickCarousel from "./Components/Carousel/SlickCarousel";
+//import PuzzleNew from "./Components/Puzzle/PuzzleNew";
 
 const theme = createTheme({
   typography: {
@@ -55,6 +56,7 @@ const App = () => {
         <SlickCarousel />
         {/* <SectionCarousel /> */}
         <Puzzle />
+        {/* <PuzzleNew /> */}
         <Footer />
       </ThemeProvider>
     </div>
