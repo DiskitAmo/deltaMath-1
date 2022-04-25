@@ -42,14 +42,6 @@ const theme = createTheme({
 });
 
 const App = () => {
-  // const [count, setCount] = useState();
-
-  // setInterval(() => {
-  //   // if (count <= 9) {
-  //   setCount(count + 1);
-  //   // }
-  // }, 1000);
-
   return (
     <div className="App">
       <ThemeProvider theme={theme}>

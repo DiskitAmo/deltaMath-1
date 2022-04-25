@@ -1,27 +1,26 @@
 .Puzzle {
   background-color: #2f3d4f;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding-top: 20px;
+  padding-bottom: 80px;
 }
 
 .Puzzle .boxes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 40px;
 }
 
-.Puzzle .boxes .flip-cards {
+.Puzzle .boxes .cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,24 +36,40 @@
           align-items: center;
 }
 
-.Puzzle .boxes .flip-cards .p {
+.Puzzle .boxes .cards .flip-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Puzzle .boxes .cards .flip-cards .p {
   font-size: 80px;
   color: white;
 }
 
 @media screen and (max-width: 900px) {
-  .Puzzle .boxes .flip-cards .p {
+  .Puzzle .boxes .cards .flip-cards .p {
     font-size: 50px !important;
   }
 }
 
 @media screen and (max-width: 630px) {
-  .Puzzle .boxes .flip-cards .p {
+  .Puzzle .boxes .cards .flip-cards .p {
     font-size: 20px !important;
   }
 }
 
-.Puzzle .boxes .tick {
+.Puzzle .boxes .cards .tick {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,18 +89,18 @@
 }
 
 @media screen and (max-width: 900px) {
-  .Puzzle .boxes .tick {
+  .Puzzle .boxes .cards .tick {
     font-size: 2.5rem !important;
   }
 }
 
 @media screen and (max-width: 630px) {
-  .Puzzle .boxes .tick {
+  .Puzzle .boxes .cards .tick {
     font-size: 1.2rem !important;
   }
 }
 
-.Puzzle .boxes .tick .tick-flip-panel {
+.Puzzle .boxes .cards .tick .tick-flip-panel {
   background-color: #3e4857 !important;
 }
 /*# sourceMappingURL=tick.css.map */
