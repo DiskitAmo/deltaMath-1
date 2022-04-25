@@ -28,11 +28,17 @@ const Footer = () => {
               );
             })}
           </div>
-          <hr sx={{ paddingLeft: "30px", paddingRight: "30px" }}></hr>
+          <hr
+            sx={{
+              paddingLeft: "30px",
+              paddingRight: "30px",
+              backgroundColor: "gray !important",
+            }}
+          ></hr>
         </div>
         <div className="social">
           <div className="copyright">
-            <Typography>&copy;2020 DeltaMath</Typography>
+            <Typography className="term1">&copy;2020 DeltaMath</Typography>
             <Typography className="term">Terms of use</Typography>
             <Typography className="term">Privacy policy</Typography>
           </div>

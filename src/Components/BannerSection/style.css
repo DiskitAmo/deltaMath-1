@@ -43,6 +43,7 @@
         -ms-flex-align: center;
             align-items: center;
     padding: 0;
+    padding-top: 0px;
     row-gap: 25px;
   }
 }
@@ -126,8 +127,8 @@
   .bannerContainer .headings {
     text-align: center;
     padding: 20px;
-    padding-top: 80px;
-    padding-bottom: 70px;
+    padding-top: 70px;
+    padding-bottom: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

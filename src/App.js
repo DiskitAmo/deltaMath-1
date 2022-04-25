@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -8,13 +8,10 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Feedback from "./Components/Feedbacks/Feedback";
 import Teacher from "./Components/Teacher/Teacher";
 import Parents from "./Components/Parents/Parents";
-//import SlickCarousel from "./Components/Carousel/slickCarousel";
-//import SectionCarousel from "./Components/Carousel/SectionCarousel";
-import Puzzle from "./Components/Puzzle/Puzzle";
-//import "bootstrap/dist/css/bootstrap.min.css";
+//import Puzzle from "./Components/Puzzle/Puzzle";
 import Footer from "./Components/Footer/Footer";
 import SlickCarousel from "./Components/Carousel/SlickCarousel";
-//import PuzzleNew from "./Components/Puzzle/PuzzleNew";
+import Tickflip from "./Components/Puzzle/Tickflip";
 
 const theme = createTheme({
   typography: {
@@ -45,6 +42,14 @@ const theme = createTheme({
 });
 
 const App = () => {
+  // const [count, setCount] = useState();
+
+  // setInterval(() => {
+  //   // if (count <= 9) {
+  //   setCount(count + 1);
+  //   // }
+  // }, 1000);
+
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
@@ -54,9 +59,9 @@ const App = () => {
         <Teacher />
         <Parents />
         <SlickCarousel />
-        {/* <SectionCarousel /> */}
-        <Puzzle />
-        {/* <PuzzleNew /> */}
+        {/* <Puzzle /> */}
+        <Tickflip />
+
         <Footer />
       </ThemeProvider>
     </div>

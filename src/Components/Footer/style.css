@@ -26,6 +26,7 @@
   text-transform: uppercase;
   padding: 30px;
   color: gray !important;
+  padding-bottom: 40px;
 }
 
 @media screen and (max-width: 700px) {
@@ -36,6 +37,10 @@
             flex-direction: column;
     row-gap: 20px;
   }
+}
+
+.footer .footerContainer .info .logo {
+  width: 270px !important;
 }
 
 @media screen and (max-width: 700px) {
@@ -53,6 +58,7 @@
           justify-content: space-between;
   padding-left: 40px;
   padding-right: 40px;
+  padding-top: 30px;
 }
 
 @media screen and (max-width: 700px) {
@@ -78,6 +84,10 @@
 .footer .footerContainer .social .copyright .term {
   color: gray !important;
   text-decoration: underline;
+}
+
+.footer .footerContainer .social .copyright .term1 {
+  color: gray !important;
 }
 
 .footer .footerContainer .social .media {
@@ -153,6 +163,9 @@
     text-decoration: underline;
     -webkit-text-decoration-color: gray;
             text-decoration-color: gray;
+  }
+  .footer .footerContainer .copyrightMobile .copy .term1 {
+    color: gray !important;
   }
   .footer .footerContainer .copyrightMobile .copy .delta {
     color: gray !important;

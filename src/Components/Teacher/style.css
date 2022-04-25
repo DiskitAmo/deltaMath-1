@@ -1,22 +1,48 @@
 .Teachers {
-  width: 100%;
-  background-color: #f0efef;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #f0eeef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  min-height: 550px;
+  width: 100%;
+}
+
+.Teachers .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: calc(50vw + 600px);
+  width: 100%;
 }
 
 @media screen and (max-width: 1330px) {
-  .Teachers {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    row-gap: 30px;
+  .Teachers .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding-top: 60px;
+    width: 100%;
   }
 }
 
@@ -30,16 +56,8 @@
   position: relative;
 }
 
-@media screen and (max-width: 1330px) {
-  .Teachers .images {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-}
-
 .Teachers .images .laptop {
-  width: 80%;
+  width: 100%;
 }
 
 @media screen and (max-width: 1330px) {
@@ -57,13 +75,7 @@
 .Teachers .images .persinImg {
   position: absolute;
   top: 30px;
-  left: 15%;
-}
-
-@media screen and (max-width: 1880px) {
-  .Teachers .images .persinImg {
-    left: 15%;
-  }
+  left: 0.5%;
 }
 
 @media screen and (max-width: 1330px) {
@@ -81,8 +93,9 @@
 }
 
 .Teachers .forTeachers {
-  text-align: left;
-  max-width: 750px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,13 +103,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 250px;
+  max-width: 600px;
+  min-height: 450px;
+  padding-left: 40px;
 }
 
 @media screen and (max-width: 1330px) {
@@ -114,10 +126,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 20px;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    padding-left: 0px;
   }
 }
 
@@ -131,13 +140,6 @@
 
 @media screen and (max-width: 1330px) {
   .Teachers .forTeachers .description {
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .Teachers .forTeachers .description {
-    max-width: 300px;
     text-align: center;
   }
 }

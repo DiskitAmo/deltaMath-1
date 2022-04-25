@@ -14,12 +14,14 @@
         text-transform: uppercase;
         padding: 30px;
         color: gray !important;
+        padding-bottom: 40px;
         @media screen and (max-width: 700px) {
           flex-direction: column;
           row-gap: 20px;
         }
       }
       .logo {
+        width: 270px !important;
         @media screen and (max-width: 700px) {
           width: 230px;
         }
@@ -30,6 +32,7 @@
       justify-content: space-between;
       padding-left: 40px;
       padding-right: 40px;
+      padding-top: 30px;
       @media screen and (max-width: 700px) {
         display: none;
       }
@@ -42,6 +45,9 @@
         .term {
           color: gray !important;
           text-decoration: underline;
+        }
+        .term1 {
+          color: gray !important;
         }
       }
       .media {
@@ -80,6 +86,9 @@
           .term {
             text-decoration: underline;
             text-decoration-color: gray;
+          }
+          .term1 {
+            color: gray !important;
           }
           .delta {
             color: gray !important;

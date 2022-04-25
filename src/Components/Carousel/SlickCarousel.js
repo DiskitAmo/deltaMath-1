@@ -8,18 +8,33 @@ import profile1 from "../Assets/Ellipse 3.png";
 import profile2 from "../Assets/Ellipse 4.png";
 import profile3 from "../Assets/Ellipse 5.png";
 import quote from "../Assets/quote.png";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 const SlickCarousel = () => {
   const settings = {
     dots: false,
     infinite: true,
+    autoplay: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: true,
+    prevArrow: (
+      <div class="slick-prev">
+        <ArrowBackIosIcon fontSize="50px" />
+      </div>
+    ),
+    nextArrow: (
+      <div class="slick-next">
+        <ArrowForwardIosIcon fontSize="50px" />
+      </div>
+    ),
   };
   const settings1 = {
     dots: false,
     infinite: true,
+    autoplay: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -29,21 +44,21 @@ const SlickCarousel = () => {
     {
       Quote: quote,
       detail:
-        "At vero ero accurate at iuyt odio dishjjn sdcifd qui bandfg dishjjn sdcifd  pre adfgvb dishjjn sdcifd qui  volumnbb delenti arque corruit quos.",
+        "At vero ero accurate at iuyt odio dishjjn sdcifd qui bandfg dishjjn sdcifd  pre adfgvb dishjjn accurate at iuyt odio dishjjn sdcifd qui bandfg dishjjn sdcifd qui  volumnbb delenti arque corruit quos.",
       image: profile1,
       occupation: "Teacher",
     },
     {
       Quote: quote,
       detail:
-        "At vero ero accurate at iuyt odio dishjjn sdcifd qui bandfg dishjjn sdcifd  pre adfgvb dishjjn sdcifd qui  volumnbb delenti arque corruit quos.",
+        "At vero ero accurate at iuyt odio dishjjn sdcifd qui bandfg dishjjn sdcifd  pre adfgvb dishjjn accurate at iuyt odio dishjjn sdcifd qui bandfg dishjjn sdcifd qui  volumnbb delenti arque corruit quos.",
       image: profile2,
       occupation: "Parent",
     },
     {
       Quote: quote,
       detail:
-        "At vero ero accurate at iuyt odio dishjjn sdcifd qui bandfg dishjjn sdcifd  pre adfgvb dishjjn sdcifd qui  volumnbb delenti arque corruit quos.",
+        "At vero ero accurate at iuyt odio dishjjn sdcifd qui bandfg dishjjn dishjjn sdcifd qui bandfg dishjjn sdcifd  pre adfgvb dishjjn sdcifd qui  volumnbb delenti arque corruit quos.",
       image: profile3,
       occupation: "Student",
     },
@@ -61,9 +76,7 @@ const SlickCarousel = () => {
               return (
                 <div className="Card" key={index}>
                   <img src={item.Quote} alt="quote" className="quote"></img>
-                  <Typography variant="body2" className="detail">
-                    {item.detail}
-                  </Typography>
+                  <Typography className="detail">{item.detail}</Typography>
                   <img
                     src={item.image}
                     alt="profile picture"
